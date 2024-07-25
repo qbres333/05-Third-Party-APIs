@@ -6,6 +6,18 @@
   --light: #fffaf7;
 }
 
+.sevillana-regular {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 ::selection {
   color: var(--brown);
   background-color: var(--light);
