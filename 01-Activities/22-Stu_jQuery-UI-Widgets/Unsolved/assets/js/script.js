@@ -30,7 +30,24 @@ const handleFormSubmit = function (event) {
 formEl.on('submit', handleFormSubmit);
 
 // Add Autocomplete widget here
-//
+$( function() {
+  var availableTags = [
+    "JavaScript",
+    "Lisp",
+    "Perl",
+    "PHP",
+    "Python",
+    "Ruby",
+    "Scala",
+    "Scheme"
+  ];
+  $( "#tags" ).autocomplete({
+    source: availableTags
+  });
+} );
 
 // Add Datepicker widget here
 //
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
