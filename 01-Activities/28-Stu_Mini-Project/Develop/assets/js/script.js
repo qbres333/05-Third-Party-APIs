@@ -16,18 +16,44 @@ function readProjectsFromStorage() {
   
   // TODO: Retrieve projects from localStorage and parse the JSON to an array. If there are no projects in localStorage, initialize an empty array and return it.
 
+  // const projects = localStorage.getItem('projects');
+  // if(projects) {
+  //   return JSON.parse(projects);
+  // } else {
+  //   return [];
+  // }
+
+  localStorage.getItem(JSON.parse('projects'));
 }
 
 // TODO: Create a function that accepts an array of projects, stringifys them, and saves them in localStorage.
+function saveProjectsToStorage(projects) {
+  localStorage.setItem('projects', JSON.stringify(projects));
 
+}
 
 // ? Creates a project card from the information passed in `project` parameter and returns it.
 function createProjectCard(project) {
 
   // TODO: Create a new card element and add the classes `card`, `project-card`, `draggable`, and `my-3`. Also add a `data-project-id` attribute and set it to the project id.
+  const newCard = document.createElement("newCard");
+  newCard.addClass('card','project-card','draggable','my-3');
+  newCard.setAttribute("data-project-id","data-project-id");
+
+
   // TODO: Create a new card header element and add the classes `card-header` and `h4`. Also set the text of the card header to the project name.
+  const newCardHeader = document.createElement("newCardHeader");
+  newCardHeader.addClass('card-header','h4');
+  newCardHeader.text(projectNameInputEl);
+
+  
   // TODO: Create a new card body element and add the class `card-body`.
+  const cardBody = createElement("cardBody");
+  cardBody.addClass('card-body');
+  
   // TODO: Create a new paragraph element and add the class `card-text`. Also set the text of the paragraph to the project type.
+  const newParagraph = document.createElement("p");
+
   // TODO: Create a new paragraph element and add the class `card-text`. Also set the text of the paragraph to the project due date.
   // TODO: Create a new button element and add the classes `btn`, `btn-danger`, and `delete`. Also set the text of the button to "Delete" and add a `data-project-id` attribute and set it to the project id.
 
