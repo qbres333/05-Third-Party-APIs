@@ -2,26 +2,26 @@
 /* TODO: Select the existing DOM element, <div id="root">, 
 and assign to a new variable */
 // // Hint: Visit the documentation https://api.jquery.com/
-const rootEl = $('root');
-// const rootEl = document.getElementById("root");
-
+const rootEl = $("#root");
 
 /* TODO: Create a '<p>' element that will store an author's 
 name and assign that created element to a new variable */
-const authorName = $('<p>');
-rootEl.append(authorName);
+const authorName = $("<p>");
+
+
 
 /* TODO: Add the following text to the newly created '<p>' 
 element: "~ Carol Dweck" */
-authorName.textContent = "Carol Dweck";
-// authorName.text('~ Carol Dweck');
+authorName.text("~ Carol Dweck");
 
 /* TODO: Add the class 'plain' to the author element */
-authorName.attr('class', 'plain');
+authorName.attr("class", "plain");
 
 /* TODO: Create a new '<h1>' element that will store an author's 
 quote and assign it to new variable */
-const authorQuote = $('<h1>');
+const authorQuote = $("<h1>");
+// rootEl.append(authorQuote);
+
 
 /* TODO: Add the following quote text to the quote element, "Love 
 Challenges, Be Intrigued by Mistakes, Enjoy Effort, and Keep Learning." */
@@ -36,5 +36,6 @@ of 'root' in 'index.html' */
 
 /* TODO: Append the authorName element to the quote element */
 // authorQuote.append(authorName);
-
+$("div").append(authorQuote);
+$("div").append(authorName);
 
