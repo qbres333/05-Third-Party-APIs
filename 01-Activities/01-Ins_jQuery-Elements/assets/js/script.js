@@ -34,7 +34,12 @@ const abilities = [
   'much more',
 ];
 
-// ? We use a `for...of` loop here because it's a little less code than a traditional `for` loop. We also don't need to use an index variable like `i` in this case.
+/* ? We use a `for...of` loop here because it's a little less 
+code than a traditional `for` loop. We also don't need to 
+use an index variable like `i` in this case. 
+
+This for loop appends the above listed abilities array elements
+to a list created on the webpage. */
 for (const ability of abilities) {
   // Create a new `<li>` for each ability and its text content
   const abilityEl = $('<li>');
@@ -49,6 +54,17 @@ for (const ability of abilities) {
   // const abilityEl = $(`<li>${ability}</li>`);
 
   // Add this new `<li>` to the `<div>` root element.
+  /* Why can we use <li> without <ol> or <ul>? Why is it not 
+  recommended?
+  Semantic Correctness: <li> is specifically designed to represent 
+    list items within an ordered or unordered list. Using it outside 
+    of this context can confuse screen readers and other assistive 
+    technologies.
+  Visual Consistency: Browsers might apply default styles to <li> 
+    elements when used without their parent elements, leading to 
+    inconsistent appearance.
+  Maintainability: Using <li> without its proper container makes 
+    the HTML structure less clear and harder to maintain.*/
   rootEl.append(abilityEl);
 }
 
