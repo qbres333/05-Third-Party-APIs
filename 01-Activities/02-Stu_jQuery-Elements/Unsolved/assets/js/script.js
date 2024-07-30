@@ -9,6 +9,7 @@ const rootEl = $('root');
 /* TODO: Create a '<p>' element that will store an author's 
 name and assign that created element to a new variable */
 const authorName = $('<p>');
+rootEl.append(authorName);
 
 /* TODO: Add the following text to the newly created '<p>' 
 element: "~ Carol Dweck" */
@@ -29,12 +30,11 @@ authorQuote.text('Love Challenges, Be Intrigued by Mistakes, Enjoy Effort, and K
 /* TODO: Apply the class 'fancy' to the quote element */
 authorQuote.addClass('fancy');
 
-/* TODO: Append the authorName element to the quote element */
-authorQuote.append(authorName);
-
 /* TODO: Append the quote element to the HTML element with an ID 
 of 'root' in 'index.html' */
-rootEl.append(authorQuote);
+// rootEl.append(authorQuote);
 
-console.log(authorName);
-console.log(authorQuote);
+/* TODO: Append the authorName element to the quote element */
+// authorQuote.append(authorName);
+
+
