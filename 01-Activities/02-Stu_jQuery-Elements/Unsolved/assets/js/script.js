@@ -25,10 +25,10 @@ const authorQuote = $("<h1>");
 
 /* TODO: Add the following quote text to the quote element, "Love 
 Challenges, Be Intrigued by Mistakes, Enjoy Effort, and Keep Learning." */
-authorQuote.text('Love Challenges, Be Intrigued by Mistakes, Enjoy Effort, and Keep Learning.'); 
+authorQuote.text("Love Challenges, Be Intrigued by Mistakes, Enjoy Effort, and Keep Learning."); 
 
 /* TODO: Apply the class 'fancy' to the quote element */
-authorQuote.addClass('fancy');
+authorQuote.addClass("fancy");
 
 /* TODO: Append the quote element to the HTML element with an ID 
 of 'root' in 'index.html' */

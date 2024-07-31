@@ -34,5 +34,3 @@ function handleFormSubmit(event) {
 // TODO: Add an event listener to the `shoppingFormEl` to handle submission
 // use 'on' method
 shoppingFormEl.on('click', handleFormSubmit);
-
-// gryxa266qw
